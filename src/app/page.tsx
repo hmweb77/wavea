@@ -6,6 +6,7 @@ import GetInTouch from '@/components/GetInTouch'
 import Header from '@/components/Header'
 import Meeting from '@/components/Meeting'
 import Projects from '@/components/Projects'
+import Services from '@/components/Services'
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
      <Creative/>
      <Expertise/>
      <Meeting/>
+     <Services/>
      <Projects/>
      <Feedback/>
      <GetInTouch/>
