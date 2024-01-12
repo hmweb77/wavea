@@ -8,8 +8,7 @@ import marketing from "../assets/marketing-picture.svg"
 
 export default function Expertise() {
   return (
-    <div>
-      
+    <div>   
       <div className="flex flex-col items-center">
       <h1 className="text-5xl text-yellow-200 font-bold">Our Expertise</h1>
       <p className='max-w-md px-4 text-gris-400 text-center'>We specialize in creating great quality designs, and our team can prove it!</p>

@@ -1,3 +1,4 @@
+import Blog from '@/components/Blog'
 import Creative from '@/components/Creative'
 import Expertise from '@/components/Expertise'
 import Feedback from '@/components/Feedback'
@@ -11,16 +12,17 @@ import Services from '@/components/Services'
 
 export default function Home() {
   return (
-    <main > 
-     <Header/>
-     <Creative/>
-     <Expertise/>
-     <Meeting/>
-     <Services/>
-     <Projects/>
-     <Feedback/>
-     <GetInTouch/>
-     <Footer/>
+    <main >
+      <Header />
+      <Creative />
+      <Expertise/>
+      <Meeting />
+      <Services/>
+      <Projects />
+      <Feedback />
+      <Blog />
+      <GetInTouch />
+      <Footer />
     </main>
   )
 }
