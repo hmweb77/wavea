@@ -15,9 +15,9 @@ export default function Home() {
     <main >
       <Header />
       <Creative />
-      <Expertise/>
-      <Meeting />
+      {/* <Expertise/> */}
       <Services/>
+      <Meeting />
       <Projects />
       <Feedback />
       <Blog />

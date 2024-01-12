@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Card: FC<Props> = ({ image, color, title, description, isInView, idx }) => {
-    console.log(` text bg-${color}`);
+
     return (
         <div className={`flex flex-col items-center`} style={{
             transform: isInView ? 'none' : 'translateY(100%)',
