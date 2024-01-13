@@ -2,9 +2,9 @@
 import { useRef } from 'react';
 import Card from './Card';
 import { useInView } from 'framer-motion';
-import design from "../assets/ux-picture.svg"
-import dev from "../assets/dev-picture.svg"
-import marketing from "../assets/marketing-picture.svg"
+import design from "../assets/design.png"
+import dev from "../assets/website.png"
+import marketing from "../assets/marketing.png"
 const servicesData = [
 
     {
@@ -36,10 +36,10 @@ const Services = () => {
     <section id="services" ref={ref}>
       <div className="container mx-auto">
       <div className="flex flex-col items-center">
-      <h1 className="text-5xl text-yellow-200 font-bold">Our Expertise</h1>
-      <p className='max-w-md px-4 text-gris-400 text-center'>We specialize in creating great quality designs, and our team can prove it!</p>
+      <h1 className="text-4xl text-yellow-200 font-bold my-4">Our Expertise</h1>
+      <p className='max-w-md px-4 text-gris-400 text-center mb-8'>We specialize in creating great quality designs, and our team can prove it!</p>
     </div>
-        <div className="flex justify-between">
+        <div className="flex flex-col lg:flex-row justify-between">
           {servicesData.map((item, idx) => (
             <Card key={`services__item-${idx}`} {...item} isInView={isInView} idx={idx} />
           ))}
