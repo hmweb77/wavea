@@ -1,10 +1,12 @@
 "use client"
 import { useRef } from 'react';
 import Card from './Card';
+import Image from 'next/image'
 import { useInView } from 'framer-motion';
-import design from "../assets/design.png"
-import dev from "../assets/website.png"
-import marketing from "../assets/marketing.png"
+import design from "../assets/design (1).png"
+import dev from "../assets/website (1).png"
+import marketing from "../assets/marketing (1).png"
+
 const servicesData = [
 
     {
@@ -40,9 +42,46 @@ const Services = () => {
       <p className='max-w-md px-4 text-gris-400 text-center mb-8'>We specialize in creating great quality designs, and our team can prove it!</p>
     </div>
         <div className="flex flex-col lg:flex-row justify-between">
-          {servicesData.map((item, idx) => (
-            <Card key={`services__item-${idx}`} {...item} isInView={isInView} idx={idx} />
-          ))}
+
+        <section className="flex flex-col items-center" style={{
+            transform: isInView ? 'none' : 'translateY(100%)',
+            opacity: isInView ? 1 : 0,
+            transition: `all ${( 1)/2}s ease-out 0.2s`,
+        }}>
+            <div className="bg-blue-700 py-10 px-24">
+                <Image width={200} height={150} src={dev} alt='logo' />
+            </div>
+            <div className="text-gris-400 bg-white-200 p-6 text-center">
+                <h1 className='text-black'>Websites</h1>
+                <p className='text-gris-400'>Empower your business with a custom, cutting-edge website.</p>
+            </div>
+        </section>
+        <section className="flex flex-col items-center" style={{
+            transform: isInView ? 'none' : 'translateY(100%)',
+            opacity: isInView ? 1 : 0,
+            transition: `all ${(2)/2}s ease-out 0.2s`,
+        }}>
+            <div className="bg-blue-800 py-10 px-24">
+                <Image width={200} height={150} src={marketing} alt='logo' />
+            </div>
+            <div className="text-gris-400 bg-white-200 p-6 text-center">
+                <h1 className='text-black'>Creative marketing</h1>
+                <p className='text-gris-400'>Aspects of creative marketing include social media, artwork, and design.</p>
+            </div>
+        </section>
+        <section className="flex flex-col items-center" style={{
+            transform: isInView ? 'none' : 'translateY(100%)',
+            opacity: isInView ? 1 : 0,
+            transition: `all ${( 3)/2}s ease-out 0.2s`,
+        }}>
+            <div className="bg-blue-300 py-10 px-24">
+                <Image width={200} height={150} src={design} alt='logo' />
+            </div>
+            <div className="text-gris-400 bg-white-200 p-6 text-center">
+                <h1 className='text-black'>UX/UI Design</h1>
+                <p className='text-gris-400'>UI/UX design focuses on creating a seamless and meaningful user experience.</p>
+            </div>
+        </section>
         </div>
       </div>
     </section>
