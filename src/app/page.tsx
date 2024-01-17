@@ -20,7 +20,7 @@ export default function Home() {
       <Services />
       <Meeting />
       {/* <Projects /> */}
-      <Feedback />
+      {/* <Feedback /> */}
       <Blog />
       <GetInTouch />
       <Footer />

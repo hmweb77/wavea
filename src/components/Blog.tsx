@@ -7,7 +7,7 @@ export default function Blog() {
     <section className='max-container'>
       <div>
 
-    <h2 className='font-Lexend Deca text-blue-500 text-3xl text-center sm:text-4xl md:text-4xl lg:text-5xl font-bold'>
+    <h2 className='font-Lexend m-8 Deca text-blue-500 text-3xl text-center sm:text-4xl md:text-4xl lg:text-5xl font-bold'>
   WHAT OTHERS SAY ABOUT US
 </h2>
 
