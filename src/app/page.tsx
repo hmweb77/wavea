@@ -10,17 +10,18 @@ import Projects from '@/components/Projects'
 import Services from '@/components/Services'
 
 
+
 export default function Home() {
   return (
     <main >
       <Header />
       <Creative />
       {/* <Expertise/> */}
-      <Services/>
+      <Services />
       <Meeting />
-      <Projects />
+      {/* <Projects /> */}
       <Feedback />
-      {/* <Blog /> */}
+      <Blog />
       <GetInTouch />
       <Footer />
     </main>
