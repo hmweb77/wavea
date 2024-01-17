@@ -19,8 +19,8 @@ export default function Header() {
                     {/* LOGO */}
                     <Link href="/">
                         <Image src={Logo} alt='logo'
-                            width={70}
-                            height={70}
+                            width={100}
+                            height={100}
                         />
                     </Link>
                     {/* HAMBURGER BUTTON FOR MOBILE */}
@@ -53,11 +53,7 @@ export default function Header() {
                                 About
                             </Link>
                         </li>
-                        <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-500  border-blue-500 md:hover:text-blue-500 md:hover:bg-transparent">
-                            <Link href="#blog" onClick={() => setNavBar(!navBar)}>
-                                Blogs
-                            </Link>
-                        </li>
+                       
                         <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-500  border-blue-500 md:hover:text-blue-500 md:hover:bg-transparent">
                             <Link href="#contact" onClick={() => setNavBar(!navBar)}>
                                 Contact

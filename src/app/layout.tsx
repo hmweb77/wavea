@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'wavea',
   description: 'Surfing the digital technology',
+
 }
 
 export default function RootLayout({
