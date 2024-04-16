@@ -30,7 +30,7 @@ export default function NavBars() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link className="text-gris-400 p-4 hover:text-blue-900 bg-no-repeat" href="#">
+                    <Link className="text-gris-400 p-4 hover:text-blue-900 bg-no-repeat" href="/">
                         Projects
                     </Link>
                 </NavbarItem>
@@ -72,16 +72,16 @@ export default function NavBars() {
             {isMenuOpen && (
                 <NavbarMenu>
                     <NavbarMenuItem>
-                        <Link className="text-gris-400 w-full m-2 py-4 hover:text-blue-900 bg-no-repeat" href="about" onClick={closeMenu}>
+                        <Link className="text-gris-400 w-full m-2 py-4 hover:text-blue-900 bg-no-repeat" href="/" onClick={closeMenu}>
                             About
                         </Link>
-                        <Link className="text-gris-400 w-full m-2 py-4 hover:text-blue-900 bg-no-repeat" href="services" onClick={closeMenu}>
+                        <Link className="text-gris-400 w-full m-2 py-4 hover:text-blue-900 bg-no-repeat" href="/" onClick={closeMenu}>
                             Services
                         </Link>
-                        <Link className="text-gris-400 w-full m-2 py-4 hover:text-blue-900 bg-no-repeat" href="#" onClick={closeMenu}>
+                        <Link className="text-gris-400 w-full m-2 py-4 hover:text-blue-900 bg-no-repeat" href="/" onClick={closeMenu}>
                             Projects
                         </Link>
-                        <Link className="text-gris-400 w-full m-2 py-4 hover:text-blue-900 bg-no-repeat" href="privacy" onClick={closeMenu}>
+                        <Link className="text-gris-400 w-full m-2 py-4 hover:text-blue-900 bg-no-repeat" href="#faq" onClick={closeMenu}>
                             FAQ
                         </Link>
                         <Link className="text-gris-400 w-full m-2 py-4 hover:text-blue-900 bg-no-repeat" href="privacy" onClick={closeMenu}>
