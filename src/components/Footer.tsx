@@ -5,6 +5,7 @@ import { FaCopyright } from "react-icons/fa";
 import Image from "next/image";
 import Logo from "../assets/logo.svg"
 import { footerLinks } from "../constants/Footer";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -20,7 +21,7 @@ export default function Footer() {
             About Us
           </h4>
           <p className='mt-6 text-base leading-7 font-Lexend-Deca  sm:max-w-sm text-gris-200'>
-            Connect with your site visitor’s on a personal level and make sure that your site becomes a regular stop in their daily browsing.
+          Bring your ideas.We will take care of the rest.
           </p>
           <div className='flex items-center gap-5 mt-8'>
             <FaInstagram style={{ fontSize: "3em" }} className="bg-yellow-200 p-2 rounded-full " />
@@ -58,7 +59,7 @@ export default function Footer() {
       <div className='flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center'>
         <div className='flex flex-1 justify-start items-center gap-2 font-Lexend-Deca cursor-pointer'>
           <FaCopyright />
-          <p>Copyright. All rights reserved. Terms & Conditions</p>
+          <p>Copyright. All rights reserved. <Link href="/privacy" className="text-slate-50 hover:underline ">Terms & Conditions</Link></p>
         </div>
       </div>
     </footer>

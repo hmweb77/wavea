@@ -1,29 +1,40 @@
-import Blog from '@/components/Blog'
+"use client"
+import * as React from "react";
+
+import { NextUIProvider } from "@nextui-org/react";
+import Reviews from '@/components/Reviews'
 import Creative from '@/components/Creative'
-// import Expertise from '@/components/Expertise'
-// import Feedback from '@/components/Feedback'
 import Footer from '@/components/Footer'
 import GetInTouch from '@/components/GetInTouch'
-import Header from '@/components/Header'
+
 import Meeting from '@/components/Meeting'
-// import Projects from '@/components/Projects'
+
 import Services from '@/components/Services'
+import WhatsappButton from '@/components/WhatsappButton'
+
+import Navbars from "@/components/NavBars";
+import Faq from "@/components/Faq";
+import Path from "@/components/Path";
+
+
 
 
 
 export default function Home() {
   return (
     <main >
-      <Header />
-      <Creative />
-      {/* <Expertise/> */}
-      <Services />
-      <Meeting />
-      {/* <Projects /> */}
-      {/* <Feedback /> */}
-      <Blog />
-      <GetInTouch />
-      <Footer />
+      <NextUIProvider>
+        <Navbars />
+        <Creative />
+        <Services />
+        <Path/>
+        <Meeting />
+        <Reviews />
+        <Faq/>
+        {/* <GetInTouch /> */}
+        <Footer />
+        <WhatsappButton />
+      </NextUIProvider>
     </main>
   )
 }

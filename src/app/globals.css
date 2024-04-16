@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body{
+    font-family: 'Montserrat', sans-serif;
     margin-left: 5px;
     margin-right: 5px;
 }

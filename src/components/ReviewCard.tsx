@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Image from "next/image";
 import Star from "../assets/star.svg";
@@ -11,7 +11,6 @@ const ReviewCard = () => {
 
   return (
     <div className="m-6 ">
-
         {Reviews.map((review) => (
           <>
             <div className="flex justify-center items-center">
