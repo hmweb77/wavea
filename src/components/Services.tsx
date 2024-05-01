@@ -36,7 +36,7 @@ export default function Services() {
             <Image src={marketing} alt="logo" width={126} height={126} className='w-300 h-120' />
               <h3 className="font-montserrat text-2xl text-black-100 leading-130 font-semibold my-4">MARKETING</h3>
               <p className="font-montserrat text-black-200 text-xl leading-170 ">
-                Our strategy ensures your brand's growth. Our approach guarantees a standout, fast website that boosts your business and delights users.
+                Our strategy ensures your brand growth. Our approach guarantees a standout, fast website that boosts your business and delights users.
               </p>
             </div>
           </div>
