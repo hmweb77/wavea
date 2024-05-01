@@ -1,67 +1,47 @@
-"use client"
-
-
+import React from 'react'
 import Image from 'next/image'
-import design from "../assets/ux-picture.svg"
-import dev from "../assets/dev-picture.svg"
-import marketing from "../assets/marketing-picture.svg"
+import web from "../assets/Development.svg"
+import design from "../assets/UX.svg"
+import marketing from "../assets/Guarantee.svg"
 
-const servicesData = [
+export default function Services() {
+    return (
 
-    {
-        image: design,
-        color:"bg-blue-300",
-        title: "UX/UI Design",
-        description: "We will invent for you design that is consistent, functional, effective to use, meets actual standards, and aesthetically pleasing for the user.",
-    },
-    {
-        image: dev,
-        color:"bg-blue-700",
-        title: "Website Development",
-        description: "Build your website and grow your online presence. We will make it look great, work fast and perform well with a seamless user experience.",
-    },
-    {
-        image: marketing,
-        color:"bg-blue-800",
-        title: "Creative marketing",
-        description: "Our strategy ensures the growth of your brand. Our approach guarantees a standout, speedy site that boosts your business and delights users.",
-    },
-];
-
-const Services = () => {
-  
-
-  return (
-    <div id="services" className="bg-gray-50 dark:bg-neutral-900" >
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
-      <h2 className="text-4xl text-yellow-200 font-bold">Our Services</h2>
-      <p className="text-gris-200 pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-      We Specialize in Creating Great Quality Designs and Our Team Can Prove it!.
-      </p>
-    </div>
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
-      {servicesData.map(({ title, description, image }) => (
-        <div key={title}>
-          <div className="h-32 w-32 flex justify-center mx-auto">
-            <Image
-              src={image}
-              alt="icon"
-              width={130}
-              height={130}
-              quality={75}
-              sizes="100vw"
-              priority
-            />
-          </div>
-          <h2 className="font-bold text-xl text-center m-3">{title}</h2>
-          <p className="pt-2 text-base text-center mb-6 dark:text-neutral-400">
-            {description}
+        <section className="container mx-auto text-center">
+            <div className='inline-flex flex-col items-center gap-4'>
+          <h2 className="md:text-6xl text-5xl font-bold leading-130 font-montserrat text-yellow-100 ">
+            our services
+          </h2>
+          <p className="text-black-200 font-montserrat leading-170 h-106 text-base md:text-2xl ">
+            we specialize in creating high-quality designs, and our team can prove it!
           </p>
-        </div>
-      ))}
-    </div>
-  </div>
-);
-};
-
-export default Services;
+            </div>
+  
+          <div className="flex flex-col md:flex-row justify-center items-center">
+            <div className="flex flex-col items-center  px-2">
+              <Image src={web} alt="logo" width={126} height={126} />
+              <h3 className="font-montserrat text-2xl text-black-100 leading-130 font-semibold my-4">UI/UX DESIGN</h3>
+              <p className="font-montserrat text-black-200 text-xl leading-170 ">
+                We will create a design for you that is consistent, functional, effective, meets current standards, and is aesthetically pleasing for the user.
+              </p>
+            </div>  
+            <div className="flex flex-col items-center mt-5  px-2">
+            <Image src={design} alt="logo" width={126} height={126} />
+              <h3 className="font-montserrat text-2xl text-black-100 leading-130 font-semibold my-4">WEBSITES</h3>
+              <p className=" font-montserrat text-black-200 text-xl leading-170 ">
+                Build your website and expand your online presence. We will ensure it looks great, operates quickly, and performs well with a seamless user experience.
+              </p>
+            </div>     
+            <div className="flex flex-col items-center mt-5 px-2">
+            <Image src={marketing} alt="logo" width={126} height={126} className='w-300 h-120' />
+              <h3 className="font-montserrat text-2xl text-black-100 leading-130 font-semibold my-4">MARKETING</h3>
+              <p className="font-montserrat text-black-200 text-xl leading-170 ">
+                Our strategy ensures your brand's growth. Our approach guarantees a standout, fast website that boosts your business and delights users.
+              </p>
+            </div>
+          </div>
+ 
+      </section>
+    );
+  }
+  

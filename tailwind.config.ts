@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-const {nextui} = require("@nextui-org/react");
+const { nextui } = require("@nextui-org/react");
 
 const config: Config = {
   content: [
@@ -10,34 +10,97 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        '130': '1.3',
+        '170': '1.7',
+        '160': '1.6',
+        '180': '1.8',
+        '126': '1.26',
+      },
+      borderRadius: {
+        '26': '26px',
+      },
+      fontWeight: {
+        'semi-bold': '600',
+        'bold': '700',
+      },
+      fontSize: {
+        'xs': '.75rem',     // 12px
+        'sm': '.875rem',    // 14px
+        'base': '1rem',     // 16px
+        'lg': '1.125rem',   // 18px
+        'xl': '1.25rem',    // 20px
+        '2xl': '1.5rem',    // 24px
+        '3xl': '1.875rem',  // 30px
+        '4xl': '2.25rem',   // 36px
+        '40': '2.5rem',     // 40 px
+        '5xl': '3rem',      // 48px
+        '6xl': '4rem',      // 64px
+        // Custom sizes
+        'hero-mobile': '1.5rem',  // Example for mobile
+        'hero-desktop': '3rem',   // Example for desktop
+      },
+      width: {
+        'logo-mobile': '88px',
+        'logo-desktop': '109px',
+        '153': '153px',
+        '133': '133px',
+        '180': '180px',
+        '200': '200px',
+        '280': '280px',
+        '300': '300px',
+        '308': '308px',
+        '345': '345px',
+        '368': '368px',
+        '382': '382px',
+        '390': '390px',
+        '500': '500px',
+        '650': '650px',
+        '1170': '1170px',
+        "673":' 673px',
+
+      },
+      height: {
+        'logo-mobile': '39px',
+        'logo-desktop': '48px',
+        '27': '27px',
+        '56': '56px',
+        '106': '106px',
+        '120': '120px',
+        '133': '133px',
+        '200': '200px',
+        '330': '330px',
+        '454': '454px',
+        '442': '442px',
+      },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
+        Lexend: ['Lexend Deca', 'sans-serif'],
       },
-      backgroundImage:{
-        'waves': "url('../assets/wave-haikei (1).svg')", 
-        'wave-path': "url('../assets/stacked-waves-haikei (1).svg')", 
-        'custom-wave':`url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='15' viewBox='0 0 21 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2 4.5L4.03467 3.06376C5.32387 2.15374 7.0755 2.27694 8.22462 3.35846V3.35846C9.50297 4.56162 11.497 4.56162 12.7754 3.35846V3.35846C13.9245 2.27694 15.6761 2.15374 16.9653 3.06376L19 4.5' stroke='%2300F5D3' stroke-width='2' stroke-linecap='round'/%3e%3c/svg%3e ")`,
-      }, 
+      backgroundImage: {
+      },
       colors: {
+        black: {
+          100: '#171717',
+          200: '#191919'
+        },
         blue: {
-          300: '#6CD1FF',
+          100: '#4C8EBC',
+          200: '#457FBE',
+          300: '#539FD6',
           400: '#4B94C7',
-          500: '#457FBE',
-          700: '#4C8EBC',
-          600: '#05303F',
-          800: '#1C465A',
-          900: '#194C66'
+          500: '#05303F'
         },
-        yellow:{
-          200:'#FFC310'
+        yellow: {
+          100: '#FFC310'
         },
-        gris:{
-          200:'#A7A7A7',
-          400:'#757575'
+        gray: {
+          100: '#A7A7A7',
+          200: '#757575'
         },
-        white:{
-          200:'#F9F9F9',
-          400:'#757575'
+        white: {
+          200: '#F9F9F9',
+          400: '#757575'
         },
       },
     },

@@ -1,9 +1,8 @@
-import NavBars from '@/components/NavBars';
+
 import React from 'react';
-import Layout from "@/components/Layout"
+
 const page = () => {
     return (
-     <Layout>
             <section className=" py-10 px-5">
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl text-blue-500 font-bold mb-6">Privacy Policy</h2>
@@ -34,7 +33,7 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            </Layout>
+        
     );
 };
 
